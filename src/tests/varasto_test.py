@@ -74,7 +74,7 @@ class TestVarasto(unittest.TestCase):
     def test_alkusaldo_asetetaan_oikein(self):
         self.varasto = Varasto(10, 5)
 
-        self.assertAlmostEqual(self.varasto.saldo, 7) #testin hajotus
+        self.assertAlmostEqual(self.varasto.saldo, 5)
     
     def test_tulostus_oikein(self):
         tulostus = "saldo = 0, vielä tilaa 10"
