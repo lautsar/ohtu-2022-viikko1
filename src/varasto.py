@@ -2,6 +2,10 @@ class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
         self.tilavuus = max(tilavuus, 0)
 
+        #pylintin rikkominen
+        self.tilavuus = self.tilavuus - self.tilavuus + self.tilavuus - self.tilavuus + self.tilavuus - self.tilavuus + self.tilavuus     
+
+        
         if alku_saldo < 0.0:
             # virheellinen, nollataan
             self.saldo = 0.0
